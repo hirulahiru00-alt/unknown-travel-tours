@@ -1,0 +1,6 @@
+{
+  "name": "Unknown Traveler - Sri Lanka Luxury Private Tours",
+  "description": "Bespoke private tours, authentic local experiences, and cinematic journeys across Sri Lanka with dedicated chauffeur-guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f2ca50;
+  --color-primary-container: #d4af37;
+  --color-primary-fixed: #ffe088;
+  --color-primary-fixed-dim: #e9c349;
+  --color-secondary: #e7c35a;
+  --color-secondary-container: #896c00;
+  --color-surface: #101419;
+  --color-surface-dim: #101419;
+  --color-surface-bright: #36393f;
+  --color-surface-container-lowest: #0a0e13;
+  --color-surface-container-low: #181c21;
+  --color-surface-container: #1c2025;
+  --color-surface-container-high: #262a30;
+  --color-surface-container-highest: #31353b;
+  --color-on-surface: #e0e2ea;
+  --color-on-surface-variant: #d0c5af;
+  --color-outline: #99907c;
+  --color-outline-variant: #4d4635;
+  --color-on-primary: #3c2f00;
+  --color-on-primary-container: #554300;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  body {
+    background-color: #101419;
+    color: #e0e2ea;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Typography Helpers */
+.font-headline-lg, .font-display-hero, .font-headline-md, .font-headline-sm {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.font-body-md, .font-body-sm, .font-body-xl, .font-label-caps, .font-label-md, .font-meta-numeric {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbars cleanly */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #101419;
+}
+::-webkit-scrollbar-thumb {
+  background: #262a30;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
